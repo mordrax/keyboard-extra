@@ -42,14 +42,14 @@ Include the Keyboard.Extra state in your program's model
 
 ```elm
 type alias Model =
-    { keyboardState : Keyboard.Extra.State
+    { keyboardState : Keyboard.Extra.Model
     , otherThing : Int
     -- ...
     }
 
 init : ( Model, Cmd Msg )
 init =
-    ( { keyboardState = Keyboard.Extra.initialState
+    ( { keyboardState = Keyboard.Extra.init
       , otherThing = 0
       -- ...
       }
